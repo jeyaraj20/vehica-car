@@ -1,0 +1,50 @@
+<header>
+    <!-- ======================================Navigation Bar================================================= -->
+    <nav class="navbar navbar-expand-lg navStyle">
+        <a class="brand-navbar logo-vehica" href="#"><img src="assets/img/jass_logo.png" alt="Responsive image"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 28 21" class="vehica-menu-icon"><g id="vehica-menu-svg" transform="translate(-11925 99)"><rect id="Op_component_1" data-name="Op component 1" width="28" height="4.2" rx="1.5" transform="translate(11925 -99)" fill="#ff4605"></rect> <rect id="Op_component_2" data-name="Op component 2" width="19.6" height="4.2" rx="1.5" transform="translate(11925 -90.6)" fill="#ff4605"></rect> <rect id="Op_component_3" data-name="Op component 3" width="14" height="4.2" rx="1.5" transform="translate(11925 -82.2)" fill="#ff4605"></rect></g></svg>
+                    </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav  navList">
+                <li class="nav-item"  *ngFor="let menu of header"><a [className]="menu.active?'active':''" (click)="getMenu(menu.routerlink)"   routerLink={{menu.routerlink}} class="nav-link">{{menu.menuName}}</a></li>
+              
+            </ul>
+           
+<!-- 
+            <div class="row">
+            <div class=" col-sm-2">
+                <div class="list-unstyled list-inline social ">
+                    <div class="vehica-social-profiles__v1">
+                        <div class="vehica-social-icon">
+                            <a href="https://www.facebook.com/rapportyk" title="Facebook" target="_blank">
+                                <i class="fab fa-facebook-f" style="color: rgb(80, 11, 241);"></i>
+                            </a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            </div> -->
+            <!-- <div class="row">
+                <div class=" col-sm-2">
+                    <div class="list-unstyled list-inline social ">
+                        <div class="vehica-social-profiles__v1">
+                            <div class="vehica-social-icon">
+                                <a href="http://wa.me/9176792777" title="Linkedin" target="_blank">
+                                    <i class="fab fa-whatsapp" style="color: rgb(57, 241, 11);"></i>
+                                </a>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                </div> -->
+        </div>
+    </nav>
+
+    <!-- ======================================carousel================================================= -->
+
+
+
+</header>

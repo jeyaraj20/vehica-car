@@ -1,0 +1,133 @@
+<div class="vehica-carousel__swiper">
+    <div class="vehica-swiper-container vehica-swiper-container-horizontal vehica-swiper-container-initialized">
+        <div class="vehica-swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row blog">
+        <div class="col-md-12">
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3" *ngFor="let car of dataList;let i = index;">
+                                <div class="vehica-swiper-slide vehica-carousel-v1__slide vehica-swiper-slide-visible vehica-swiper-slide-active" style="width: 240.75px; margin-right: 22px;margin-bottom:19px ;margin-top: 6px;">
+                                    <div class="vehica-car-card" >
+                                        <div class="vehica-car-card__inner"  routerLink="/ProductCarDetails" (click)="singleData(car,i)">
+                                            <a class="vehica-car-card-link">
+                                                <div class="vehica-car-card__image" style="padding-top: 55.5224%;">
+                                                    <div>
+                                                        <div class="vehica-car-card__image__favorite">
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                          
+                                            <div class="vehica-car-card__image-bg">
+                                                <a  class="vehica-car-card__image" style="padding-top: 55.5224%;">
+                                                    <img src="{{car.img1}}"  class="lazyautosizes lazyloaded" sizes="306px" >
+                                                    <div class="vehica-car-card__image-info">
+                                                        <span class="vehica-car-card__image-info__photos"><i
+                                                                class="far fa-images"></i>
+                                                            <span>7</span></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="vehica-car-card__content">
+                                                <a data-name="https://demo.vehicatheme.com/listing/bmw-8-serie-new-2-door-coupe-grey/" title="BMW 8-serie 2-door coupe grey" class="vehica-car-card__name">
+                                                    {{car.brand}} 
+                                                </a>
+                                                <div class="vehica-car-card__price">
+                                                    ₹ {{car.price}} 
+                                                </div>
+                                                <div class="vehica-car-card__separator">
+                                                </div>
+                                                <div class="vehica-car-card__info">
+                                                    <div class="vehica-car-card__info__single">
+                                                        {{car.makingYear}} 
+                                                    </div>
+                                                 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-md-3" *ngFor="let car of dataList;let i = index;">
+                                <div class="vehica-swiper-slide vehica-carousel-v1__slide vehica-swiper-slide-visible vehica-swiper-slide-active" style="width: 240.75px; margin-right: 22px;margin-bottom:19px ;margin-top: 6px;">
+                                    <div class="vehica-car-card" >
+                                        <div class="vehica-car-card__inner"  routerLink="/ProductCarDetails" (click)="singleData(car,i)">
+                                            <a class="vehica-car-card-link">
+                                                <div class="vehica-car-card__image" style="padding-top: 55.5224%;">
+                                                    <div>
+                                                        <div class="vehica-car-card__image__favorite">
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                          
+                                            <div class="vehica-car-card__image-bg">
+                                                <a  class="vehica-car-card__image" style="padding-top: 55.5224%;">
+                                                    <img src="{{car.img1}}"  class="lazyautosizes lazyloaded" sizes="306px" >
+                                                    <div class="vehica-car-card__image-info">
+                                                        <span class="vehica-car-card__image-info__photos"><i
+                                                                class="far fa-images"></i>
+                                                            <span>7</span></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="vehica-car-card__content">
+                                                <a data-name="https://demo.vehicatheme.com/listing/bmw-8-serie-new-2-door-coupe-grey/" title="BMW 8-serie 2-door coupe grey" class="vehica-car-card__name">
+                                                    {{car.brand}} 
+                                                </a>
+                                                <div class="vehica-car-card__price">
+                                                    ₹ {{car.price}} 
+                                                </div>
+                                                <div class="vehica-car-card__separator">
+                                                </div>
+                                                <div class="vehica-car-card__info">
+                                                    <div class="vehica-car-card__info__single">
+                                                        {{car.makingYear}} 
+                                                    </div>
+                                                 
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+
+                </div>
+                <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
+
+        </div>
+    </div>
+</div>
+<hr>
+<hr>

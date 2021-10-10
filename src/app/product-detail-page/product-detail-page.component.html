@@ -1,0 +1,47 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<hr>
+<div class="container-fluid garanty">
+    <div class="container">
+        <h3 class="h3">Shop By categories </h3>
+
+        <a (click)="prevClick()">prev</a>
+
+        <div class="row rtl text-center">
+
+            <div *ngFor="let data of filterArray" class="col-sm-2">
+                <a href="#" class="category-item">
+
+                <div  class=" cate-img">
+                <img src="{{data.img}}" style="width: 70px;height:70px;">
+            </div>
+                <h5>{{data.Name}}</h5>
+        
+                </a>
+                
+            </div>
+            <a (click)="nextClick()">next</a>
+        </div><!--.row-->
+    </div><!--.container-->
+</div><!--.container-fluid-->
+
+
+<!-- <div class="container-fluid garanty">
+    <div class="container">
+<div class="row rtl text-center owl-item active" style="width: 200px; margin-right: 30px;">
+    <div *ngFor="let data of categories" class=" col-sm-2 item">
+    <a href="#" class="category-item">
+    <div  class=" cate-img">
+    <img src="{{data.img}}" style="width: 70px;height:70px;">
+    </div>
+    <h4> {{data.Name}}&amp; Staples </h4>
+    </a>
+    </div>
+</div>
+</div>
+</div> -->
